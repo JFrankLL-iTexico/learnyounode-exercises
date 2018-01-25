@@ -7,6 +7,10 @@ http.createServer((req, res) => {
 
 	var date = new Date(query.iso);
 	
+	// ternary operator is well used for value assign
+	// for block of codes it's better to use a common if/else
+	// may you can declare the object as a separated value
+
 	var obj = (urlobj.pathname === '/api/parsetime') ? {
 		hour: date.getHours(),
 		minute: date.getMinutes(),
