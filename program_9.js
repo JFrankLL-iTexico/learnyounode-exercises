@@ -8,6 +8,8 @@ for(var i=0; i<3; i++) {
 	fetchData(i);
 }
 
+// async/await yeah!
+
 async function fetchData(i) {
 	await http.get(urls[i], res =>
 		res.pipe(bl((err, chunk) => {

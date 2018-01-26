@@ -2,6 +2,8 @@ const net = require('net');
 
 const PORT = process.argv[2];
 
+// good date management, could you try to do this with momentjs?
+
 net.createServer(socket => {
 	var date = new Date();
 	var Y = date.getYear();
